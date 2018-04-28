@@ -1,0 +1,25 @@
+    .button-group {
+      margin-top: 1px;
+    }
+
+    .button-group button {
+      background-color: #0066FF;
+      border: none;
+      width: 130px;
+      color: white;
+      padding: 5px 24px;
+      cursor: pointer;
+      float: left;
+      font-size: 80%;
+    }
+
+    img {
+      image-rendering: pixelated;
+    }
+
+
+    @media (max-width: 2048px) {
+      body {
+        background-size: 2048px;
+      }
+    }
