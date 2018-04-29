@@ -17,9 +17,3 @@
       image-rendering: pixelated;
     }
 
-
-    @media (max-width: 2048px) {
-      body {
-        background-size: 2048px;
-      }
-    }
