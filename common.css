@@ -1,5 +1,5 @@
     .button-group {
-      margin-top: 1px;
+      margin-top: 8px;
     }
 
     .button-group button {
@@ -16,4 +16,3 @@
     img {
       image-rendering: pixelated;
     }
-
