@@ -1,0 +1,201 @@
+===========
+Beast Tools
+===========
+
+| Beast Tools is an open source project to make cutting-edge DCC toolkits. 
+| If you want to join your tools to Beast Tools or develop with us, contact "fictheader[1]protonmail[2]com".
+| [1]: @ [2]: . 
+
+Blender
+*******
+
+View Snapper
+============
+
+.. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
+
+|
+| View Snapper is a tool to snap a viewport to x/y/z dimentions in one click.
+
+.. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
+
+.. image:: ./images/view_snapper_preferences.png
+
+| ``Snap View`` : Snap a viewport camera to the nearest dimention.
+| ``Persp/Ortho`` : Change a camera mode.
+| ``View Pie Ops Trigger`` : Trigger a View Ops pie.
+
+.. image:: ./images/view_snapper_pie.png
+
+* ``View to Camera`` : Set a current view as an active camera.
+* ``Active Camera`` : Set a view to a current active camera's view.
+
+
+
+Rapid Switcher
+==============
+
+.. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
+
+|
+| Rapid Switcher is a tool to move areas and acreens quickly for your rapid workflow.
+
+.. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
+
+.. image:: ./images/rapid_switcher_pie.png
+
+| Switch Area Pie's setting.
+
+.. image:: ./images/rapid_switcher.png
+
+| ``Pie Trigger`` : Trigger a Switch Area Pie.
+| ``Short Cut for Switch Up`` : Switch up areas which are enabled in Quick Switcher Menu.
+| ``Short Cut for Switch Down`` : Switch down areas which are enabled in Quick Switcher Menu.
+| ``Short Cut for Short Runner`` : Switch an area to a new area which is set in Short Runner Menu.
+| ``Short Cut for Short Runner Back Version`` : Switch back an area to an old area which is set in Short Runner Menu.
+| ``Screen Up`` : Switch up screens which are enabled in Screen Switcher Menu.
+| ``Screen Down`` : Switch down screens which are enabled in Screen Switcher Menu.
+
+.. image:: ./images/rapid_switcher_quick_switcher.png
+
+.. note:: Push a power button at the beginning.
+
+| Quick Switcher Menu
+
+.. image:: ./images/rapid_switcher_short_runner.png
+
+| Short Runner Menu
+| Double click areas on the right side, then enter the names of area. Names are automatically completed. e.g. D -> Dope Sheet.
+
+.. image:: ./images/rapid_switcher_screen_switcher.png
+
+| Screen Switcher Menu
+
+.. image:: ./images/rapid_switcher_pie_example.png
+
+| Switch Area Pie Example
+
+Rapid Boolean
+=============
+
+.. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
+
+|
+| Rapid Boolean is a tool to operate Boolen Modifier intuitively.
+
+.. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
+
+.. image:: ./images/rapid_boolean_preferences.png
+
+| ``Boolean Type`` : Default Boolean Type (You can change it via pie menu).
+| ``Maximum Draw Type`` : Default Draw Type after boolean ops (You can change it via pie menu).
+| ``Rapid Boolean Pie Trigger`` : Triger a pie menu.
+
+.. image:: ./images/rapid_boolean_pie.png
+
+.. note:: Pie Menu has shortcuts by pressing underlined letters.
+
+| ``Add``/``Remove`` : Add/Remove Boolean modifiers.
+| ``First``/``Last`` : First make a first clicked object as a main object. Last do a last clicked object as it. Only Last can add multiple boolean modifiers to a main object.
+| ``Hide``/``Show All``: Hide hides selected objects. Show All is what it means.
+| ``Union``/``Difference``/``Intersect`` : Change a boolean modifier type.
+| ``Bounds``/``Wire``/``Solid``/``Texrue`` : Change a draw type.
+| ``Apply All Rapid Boolean`` : Apply all boolean modifiers which are used by this addon.
+
+| After pressed the ``Add`` button, you can change settings ad-hoc by pressing ``Ctrl``. ``Esc`` stops this mode.
+
+.. image:: ./images/rapid_boolean_activated.png
+
+Modifier Combo
+==============
+
+.. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
+
+| 
+| Modifier Combo makes combos of modifiers.
+
+.. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
+
+.. note:: Particle System has not been supported yet.
+
+.. image:: ./images/modifier_combo_preferences.png
+
+``Modifier Combo Menu Trigger`` : Trigger Modifer Combo Menu.
+
+.. image:: ./images/modifier_combo_menu.png
+
+.. note:: You can change names of combo by clicking.
+
+| Modifier Combo Panel
+| ``Plus`` : Add modifiers currently stacked.
+| ``Minus`` : Delete a selected modifier combo.
+| ``Wrench`` : Apply a modifier combo.
+| ``Up`` : Change the order of a selected modifier combo up.
+| ``Down`` : Change the order of a selected modifier combo down.
+
+Melter
+======
+
+.. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
+
+|
+| Melter is a tool to joint verticles quickly in a natural workflow.
+
+.. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
+
+.. image:: ./images/melter_preferences.png
+
+.. warning:: You don't need to check boxes of ``Merge Verts``, ``Melter Pie Menu``, ``Circle Size Up`` and ``Circle Size Down``.
+
+| ``Circle Radius`` : Default circle radius.
+| ``Merge Type`` : Default merge type.
+| ``Start Melter`` : Start melter mode.
+| ``Merge Verts`` : Merge verts in melter mode.
+| ``Melter Pie Menu`` : Trigger a melter pie menu in melter mode.
+| ``Circle Size Up`` : Size up a select circle in melter mode.
+| ``Circle Size Down`` : Size down a select circle in melter mode.
+
+.. image:: ./images/melter_setting.png
+
+| Melter Pie Menu
+| ``At Center`` : Merge verts at center.
+| ``At First`` : Merge verts at First.
+| ``At Last`` : Merge verts at last.
+| ``At Cursor`` : Merge verts at cursor.
+| ``Collapse`` : Collapse verts.
+
+Standalone
+**********
+
+Now developping...
+
+Acknowledgement
+***************
+
+Thank all testers from wide range areas. They tested and advised Beast Tools beyond any stakes. Some features and usabilities are not completed without them. Note that they always tested Beast Tools on a fair basis which means they do **not** always support all tools and recommend to use them but they understand there are users who are empowered by the tools.
+
+Testers
+=======
+(alphabetical order)
+
+`CGradToudou <https://twitter.com/CGradToudou>`_
+
+`ekakiya <https://twitter.com/ekakiya>`_
+
+`itosue <https://twitter.com/itosue>`_
+
+`kurosaurus <https://twitter.com/kurosaurus>`_
+
+`ni_n_ja <https://twitter.com/ni_n_ja>`_
+
+`taxpon <https://twitter.com/taxpon>`_
+
+`tomB_saikaya <https://twitter.com/tomB_saikaya>`_
+
+`ymt3d <https://twitter.com/ymt3d>`_
+
+
+Developpers
+***********
+
+`kozmof <https://twitter.com/kozmof>`_ : ``View Snapper``, ``Rapid Switcher``, ``Rapid Boolean``, ``Modifier Combo``, ``Melter``
