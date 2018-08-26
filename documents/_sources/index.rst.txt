@@ -4,13 +4,21 @@
    contain the root `toctree` directive.
 
 
-Tools for Users
-***************
+Tools 
+*****
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
 
-   ./for_users/beast.rst
+   ./tools/beast.rst
 
+Codes
+*****
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+
+   ./codes/fuel.rst
 

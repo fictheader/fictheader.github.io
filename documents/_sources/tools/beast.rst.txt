@@ -139,7 +139,7 @@ Melter
 .. image:: https://img.shields.io/badge/Blender-2.79b-blue.svg
 
 |
-| Melter is a tool to joint verticles quickly in a natural workflow.
+| Melter is a tool to joint vertices quickly in a natural workflow.
 
 .. note:: Some default keybinds conflict to new keybinds. Uncheck the default keybinds via ``File`` -> ``User Preferences`` -> ``Input``.
 
@@ -195,7 +195,7 @@ Testers
 `ymt3d <https://twitter.com/ymt3d>`_
 
 
-Developpers
-***********
+Developers
+**********
 
 `kozmof <https://twitter.com/kozmof>`_ : ``View Snapper``, ``Rapid Switcher``, ``Rapid Boolean``, ``Modifier Combo``, ``Melter``

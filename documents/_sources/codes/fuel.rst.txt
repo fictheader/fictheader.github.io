@@ -1,0 +1,1025 @@
+=======
+Fuel
+=======
+
+``v0.1``
+
+.. note::
+    This is an alpha version. 
+
+About
+*****
+
+Fuel is a Blender library for rapid developping. 
+All methods are designed as idiomatic minimum components to understand a Blender API system quickly.  Any suggestons to make this library more pragmatic and useful are always welcomed.  
+
+How to Install Fuel
+*******************
+TODO
+
+Index
+*****
+
+Base
+----
+
+:func:`get_area`
+
+:func:`get_area_context`
+
+:func:`get_areas`
+
+:func:`get_areas_context`
+
+:func:`get_region_window_size_context`
+
+:func:`get_regions`
+
+:func:`get_rv3d`
+
+:func:`get_rv3d_context`
+
+:func:`get_screen`
+
+:func:`get_screen_name_context`
+
+:func:`get_space`
+
+:func:`get_space_context`
+
+:func:`get_view3d_regions`
+
+:func:`get_view3d_regions_context`
+
+:func:`get_view3d_space`
+
+:func:`get_view3d_space_context`
+
+:func:`get_viewport_loc_context`
+
+:func:`override_context`
+
+:func:`print_to_console`
+
+Math
+----
+
+:func:`vec_distance`
+
+:func:`make_quat`
+
+:func:`dot`
+
+:func:`cross`
+
+:func:`sin`
+
+:func:`cos`
+
+:func:`tan`
+
+:func:`asin`
+
+:func:`acos`
+
+:func:`atan`
+
+:func:`pivotx`
+
+:func:`pivoty`
+
+:func:`pivotz`
+
+:func:`pivot_around_vec`
+
+:func:`get_lookat_matrix`
+
+Object
+------
+
+:func:`get_active_object`
+
+:func:`get_visible_objects`
+
+:func:`get_objects`
+
+:func:`get_selected_objects`
+
+:func:`move_origin`
+
+:func:`pivot_ob_around_vec`
+
+:class:`at`
+
+:func:`apply_all_modifiers`
+
+:func:`force_edit_mode`
+
+:func:`force_object_mode`
+
+:func:`force_sculpt_mode`
+
+:func:`force_vertex_paint_mode`
+
+:func:`force_weight_paint_mode`
+
+:func:`force_texture_paint_mode`
+
+:func:`toggle_object`
+
+:func:`get_modifier_items`
+
+Mesh
+----
+
+:func:`setup_bvh`
+
+:func:`make_bmesh`
+
+:func:`make_bmesh_from_objects`
+
+:func:`apply_bmesh`
+
+:func:`make_edit_bmesh`
+
+:func:`update_edit_bmesh`
+
+:func:`get_selected_verts`
+
+:func:`get_verts_from_object`
+
+:func:`get_edges_from_object`
+
+:func:`get_faces_from_object`
+
+:func:`get_all_edges_lco_from_object`
+
+:func:`get_edge_keys_from_face`
+
+:func:`get_edge_from_edge_key`
+
+:func:`get_verts_from_edge_key`
+
+:func:`get_verts_from_face`
+
+:func:`get_verts_from_edge`
+
+:func:`get_normal_from_face`
+
+:func:`get_bound_edge_keys_from_faces`
+
+:func:`get_bedges_from_bvert`
+
+:func:`get_bfaces_from_bvert`
+
+:func:`get_bfaces_from_bedge`
+
+:func:`edge_intersect`
+
+:func:`get_center_wco`
+
+OpenGL Base 
+-----------
+
+:func:`rect_range_check_2d`
+
+OpenGL Primitive
+----------------
+
+:func:`draw_line`
+
+:func:`draw_line_strip`
+
+:func:`draw_line_loop`
+
+:func:`draw_triangle`
+
+:func:`draw_triangles`
+
+:func:`draw_triangle_strip`
+
+:func:`draw_triangle_fan`
+
+:func:`draw_quad`
+
+:func:`draw_quads`
+
+:func:`draw_quad_strip`
+
+:func:`draw_polygon`
+
+:func:`draw_circle_2d`
+
+:func:`draw_quad_2d`
+
+:func:`draw_rect_2d_1`
+
+:func:`draw_rect_2d_2`
+
+Base 
+****
+
+.. function:: override_context(area_name)
+
+    Make a specific context and return it.
+
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+    :rtype: ``bpy_types.Context``
+
+
+.. function:: print_to_console(txt)
+
+    Print a text to the console window.
+
+    :param txt: ``str`` 
+
+
+.. function:: get_region_window_size_context()
+
+    Get width and height of window in the context.
+
+    :rtype: ``int``, ``int``
+
+
+.. function:: get_viewport_loc_context()
+    
+    Get a location of viewport camera in the context.
+
+    :rtype: ``Vector`` or ``NoneType``
+
+
+.. function:: get_viewports_loc(screen_name)
+
+    Get locations of all viewport cameras in a screen.
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :rtype: ``List`` of ``Vector`` or ``NoneType``
+
+
+.. function:: get_area_context()
+    
+    Get an area in the context.
+
+    :rtype: ``bpy.types.Area``
+
+    
+.. function:: get_areas_context()
+
+    Get all areas of screen in the context.
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.Area``
+
+
+.. function:: get_screen_name_context()
+
+    Get a screen name in the context.
+
+    :rtype: ``str``
+
+
+.. function:: get_screen(screen_name)
+    
+    Get a screen.
+
+    :param screen_name: ``str``
+
+    :rtype: ``bpy.types.Screen``
+
+
+.. function:: get_areas(screen_name)
+
+    Get all areas in a screen.
+    
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.Area`` 
+
+ 
+.. function:: get_area(screen_name, area_name)
+
+    Get an area in a screen.
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+
+    :rtype: ``bpy.types.Area`` or ``NoneType``
+
+
+.. function:: get_view3d_space_context()
+
+    Get space of ``VIEW_3D`` in the context.
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.SpaceView3D`` or ``NoneType``
+
+
+.. function:: get_space(area_name, screen_name)
+
+    Get a specific area's space in a screen.
+
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+
+.. function:: get_space_context(area_name)
+
+    Get a specific area's space in the current screen.
+
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+
+
+.. function:: get_view3d_space(screen_name)
+
+    Get space of ``VIEW_3D`` in a screen.
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :note: if spaces have ``VIEW_3D``, ``bpy_prop_collection`` contains ``CONSOLE`` at last.
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.SpaceView3D`` or ``NoneType``
+
+
+.. function:: get_regions(area_name, screen_name)
+
+    Get regions in a specific area and screen.
+ 
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+
+.. function:: get_regions_context(area_name)
+
+    Get regions in a specific area of the current screen.
+
+    :param area_name: ``str`` (``VIEW_3D``, ``TIMELINE``, ``GRAPH_EDITOR``, ``DOPESHEET_EDITOR``, ``NLA_EDITOR``, ``IMAGE_EDITOR``, ``SEQUENCE_EDITOR``, ``CLIP_EDITOR``, ``TEXT_EDITOR``, ``NODE_EDITOR``, ``LOGIC_EDITOR``, ``PROPERTIES``, ``OUTLINER``, ``USER_PREFERENCES``, ``INFO``, ``FILE_BROWSER``, ``CONSOLE``)
+
+
+.. function:: get_view3d_regions_context()
+
+    Get regions of ``VIEW_3D`` in the context. Types of regions are ``HEADER``, ``TOOLS``, ``TOOL_PROPS``, ``UI``, ``WINDOW``.
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.Region`` or ``NoneType``
+
+ 
+.. function:: get_view3d_regions(screen_name)
+
+    Get regions of ``VIEW_3D`` in a screen. Types of regions are ``HEADER``, ``TOOLS``, ``TOOL_PROPS``, ``UI``, ``WINDOW``.
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.Region`` or ``NoneType``
+
+ 
+.. function:: get_rv3d_context()
+    
+    Get region_3d(rv3d) of ``VIEW_3D`` in the context.
+
+    :rtype: ``RegionView3D`` or ``NoneType``
+    
+    
+.. function:: get_rv3d(screen_name)
+
+    Get region_3d(rv3d) of ``VIEW_3D`` in the context.
+
+    :param screen_name: ``str`` (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)
+
+    :rtype: ``RegionView3D`` or ``NoneType``
+
+
+.. function:: get_addon_prefs()
+
+    Get an object of Addon Preferences.
+
+    :return: An object which contains values in ``AddonPreferences`` if it has values.
+
+
+.. function:: get_keymap_item(km, kmi_idname)
+
+    Get a keymap item.
+
+    :param km: ``bpy.types.KeyMap``
+    :param kmi_idname: ``str``
+
+    :rtype: ``bpy.types.KeyMapItem`` or ``NoneType``
+
+
+Object
+******
+
+.. function:: get_active_object()
+    
+    Get an active object.
+
+    :rtype: ``bpy_types.Object`` or ``NoneType``
+
+
+.. function:: get_visible_objects()
+
+    Get visible objects.
+
+    :rtype: ``list`` of ``bpy_types.Object`` or ``NoneType``
+
+
+.. function:: get_objects()
+
+    Get all objects.
+
+    :rtype: ``list`` of ``bpy_types.Object`` or ``NoneType``
+
+
+.. function:: get_selected_objects()
+
+    Get selected objects.
+
+    :rtype: ``list`` of ``bpy_types.Object`` or ``NoneType``
+
+
+.. function:: move_origin(ob, new_origin)
+
+    Move a location of origin.
+
+    :param ob: ``bpy_types.Object``
+    :param new_origin: ``Vector``
+
+ 
+.. function:: pivot_ob_around_vec(ob, v_origin, v_target, degrees)
+
+    Move an object around a vector.
+
+    :param ob: ``bpy_types.Object``
+    :param v_origin: ``Vector``
+    :param v_target: ``Vector``
+    :param degrees: ``float``
+
+
+.. class:: at
+    
+    Pivot object at a specific center.
+
+    :method: __init__(self, ob, center_pos)
+    
+        Initialization.
+
+        :self: self
+        :ob: ``bpy_types.Object``
+        :center_pos: ``Vector``
+    
+    :method: rotate(self, euler)
+        
+        Rotation.
+
+        :self: self
+        :euler: ``Euler``
+
+    :method: move(self. dst_pos)
+
+        Move to dst_pos from center_pos.
+
+        :self: self
+        :dst_pos: ``Vector``
+
+
+.. function:: apply_all_modifiers()
+    
+    Apply all modifiers to selected objects.
+
+
+.. function:: force_edit_mode()
+    
+    Change to Edit Mode.
+
+ 
+.. function:: force_object_mode()
+
+    Change to Object Mode.
+ 
+
+.. function:: force_sculpt_mode()
+
+    Change to Sculpt Mode.
+
+
+.. function:: force_vertex_paint_mode()
+
+    Change to Vertex Paint Mode.
+ 
+
+.. function:: force_weight_paint_mode
+
+    Change to Weight Paint Mode.
+
+
+.. function:: force_texture_paint_mode
+
+    Change to Texture Paint Mode.
+
+
+.. function:: toggle_object()
+
+    Toggle a current mode.
+
+
+.. function:: get_modifier_items(ob)
+
+    Get all modifier items of an object.
+
+    :param ob: ``bpy_types.Object``
+
+
+Mesh
+****
+
+.. function:: setup_bvh(bmesh)
+
+    Set up a bvh tree.
+
+    :param bmesh: ``BMesh``
+    :rtype: ``BVHTree``
+
+
+.. function:: make_bmesh(ob)
+
+    Make bmesh.
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``BMesh``
+
+
+.. function:: make_bmesh_from_objects(obs_list)
+
+    Make bmeshs from objects with matrixes.
+
+    :param obs_list: ``list`` of ``bpy_types.Object``
+    :rtype: ``BMesh``, (``Matrix``, (``int(num of verts)``, ``int(num of edges)`` ``int(num of faces)``, ``int(num of loops)``))
+
+
+.. function:: apply_bmesh(bm, ob)
+
+    Apply a bmesh to an object. Then delete the bmesh.
+
+    :param bm: ``BMesh``
+    :param ob: ``bpy_types.Object``
+
+
+.. function:: make_edit_bmesh()
+    
+    Make a bmesh from an object in Edit Mode.
+
+    :rtype: ``BMesh``
+
+
+.. function:: update_edit_bmesh()
+
+    Apply a bmesh to an object in Edit Mode.
+
+
+.. function:: get_selected_verts(ob)
+    
+    Get selected vertices.
+
+    :note: If you need to get selected vertices in Edit Mode which means realtime selection, use bmesh.
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``bpy_prop_collection`` of ``bpy.types.MeshVertex`` or ``NoneType`` 
+
+
+.. function:: get_verts_from_object(ob)
+
+    Get all vertices from an object.
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``list`` of ``bpy_types.MeshVertex`` or ``NoneType``
+
+
+
+.. function:: get_edges_from_object(ob)
+
+    Get all edges from an object.
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``list`` of ``bpy_types.MeshEdge`` or ``NoneType``
+
+
+.. function:: get_faces_from_object(ob)
+
+    Get all faces from an object.
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``list`` of ``bpy_types.MeshPolygon`` or ``NoneType``
+
+
+
+.. function:: get_all_edges_lco_from_object(ob)
+
+    Get all edges local coordinates from object.
+    
+    :param ob: ``bpy_types.Object``
+    :rtype: ``list`` of ``2`` length ``tuple`` of ``Vector`` or ``NoneType``
+
+
+.. function:: get_edge_keys_from_face(face)
+
+    Get all edge keys from a face.
+
+    :param face: ``bpy_types.MeshPolygon``
+    :rtype: ``2`` length ``tuple`` of ``int``
+
+
+.. function:: get_edge_from_edge_key(ob, edge_key)
+    
+    Get an edge from an edge key.
+
+    :param ob: ``bpy_types.Object``
+    :param edge_key: ``2`` length ``tuple`` of ``int``
+    :rtype: ``bpy_types.MeshEdge`` or ``NoneType``
+
+
+.. function:: get_verts_from_edge_key(ob, edge_key)
+
+    Get vertices from an edge key.
+
+    :param ob: ``bpy_types.Object``
+    :param edge_key: ``2`` length ``tuple`` of ``int``
+    :rtype: ``2`` length ``tuple`` of ``bpy_types.MeshVertex`` or ``NoneType``
+
+
+.. function:: get_verts_from_face(ob, face)
+
+    Get all vertices from a face.
+
+    :param ob: ``bpy_types.Object``
+    :param face: ``bpy_types.MeshPolygon``
+    :rtype: ``list`` of ``bpy_types.MeshVertex``
+
+
+.. function:: get_verts_from_edge(ob, edge)
+
+    Get all vertices from an edge.
+
+    :param ob: ``bpy_types.Object``
+    :param edge: ``bpy_types.MeshEdge``
+    :rtype: ``list`` of ``bpy_types.MeshVertex``
+
+
+.. function:: get_normal_from_face(face)
+
+    Get a normal from a face.
+
+    :param face: ``bpy_types.MeshPolygon``
+    :rtype: ``Vector``
+
+
+.. function:: get_bound_edge_keys_from_faces(faces) 
+
+    Get bound edges.
+
+    :param faces: ``list`` of ``bpy_types.MeshPolygon``
+    :rtype: ``list`` of ``bpy_types.MeshEdge`` or ``NoneType``
+
+
+.. function::  get_bedges_from_bvert(bvert)
+
+    Get edges link to a vertex in a bmesh.
+
+    :param bvert: ``BMVert``
+    :rtype: ``BMElemSeq`` of ``BMEdge``  
+
+
+.. function::  get_bfaces_from_bvert(bvert)
+
+    Get faces link to a vertex in a bmesh.
+
+    :param bvert: ``BMVert``
+    :rtype: ``BMElemSeq`` of ``BMFace`` 
+
+
+.. function::  get_bfaces_from_bedge(bedge)
+
+    Get faces link to an edge in a bmesh.
+
+    :param bedge: ``BMEdge`` 
+    :rtype: ``BMElemSeq`` of ``BMFace``
+
+
+.. function:: edge_intersect(ob, edge_ob, edge) 
+
+    Check an edge intersects a face of an object.
+
+    :param ob: ``bpy_types.Object``
+    :param edge_ob: ``bpy_types.Object``
+    :param edge: ``bpy_types.MeshEdge`` 
+    :rtype: ``Vector``(location), ``Vector``(normal), ``int``(face_index) or` ``NoneType``, ``NoneType``, ``NoneType``
+
+.. function:: get_center_wco(ob) 
+
+    Get a center location of an object in the world space. 
+
+    :param ob: ``bpy_types.Object``
+    :rtype: ``Vector``
+
+
+Math
+****
+
+.. note::
+    If you want to use radian based trigonometric function, use defalut ``math`` module.
+
+.. function:: vec_distance(org, dst)
+
+    Get a distance of two points.
+
+    :param org: ``Vector``
+    :param dst: ``Vector``
+    :rtype: ``float``
+
+
+.. function:: make_quat(axis_vec, degrees)
+
+    Make a quaternion to rotate around an axis vector.
+
+    :param axis_vec: ``Vector``
+    :param degrees: ``int`` or ``float``
+    :rtype: ``Quaternion``
+
+
+.. function:: dot(vec1, vec2)
+
+    Dot function.
+
+    :param vec1: ``Vector``
+    :param vec2: ``Vector``
+    :rtype: ``Vector``
+
+
+.. function:: cross(vec1, vec2)
+
+    Cross function. The order is vec1 X vec2.
+
+    :param vec1: ``Vector``
+    :param vec2: ``Vector``
+    :rtype: ``Vector``
+
+
+.. function:: sin(degrees)
+
+    sine function.
+
+    :param degrees: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: cos(degrees)
+
+    cosine function.
+
+    :param degrees: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: tan(degrees)
+
+    tangent function.
+
+    :param degrees: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: asin(ratio)
+
+    arc sine function.
+
+    :param ratio: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: acos(ratio)
+
+    arc cosine function.
+
+    :param ratio: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: atan(ratio)
+
+    arc tangent function.
+
+    :param ratio: ``int`` or ``float``
+    :rtype: ``float``
+
+
+.. function:: pivotx(vec, degrees)
+
+    pivot a vector around x axis.
+
+    :param vec: ``Vector`` 
+    :param degrees: ``int`` or ``float``
+    :rtype: ``Vector``
+
+
+.. function:: pivoty(vec, degrees)
+
+    pivot a vector around y axis.
+
+    :param vec: ``Vector`` 
+    :param degrees: ``int`` or ``float``
+    :rtype: ``Vector``
+
+
+.. function:: pivotz(vec, degrees)
+
+    pivot a vector around z axis.
+
+    :param vec: ``Vector`` 
+    :param degrees: ``int`` or ``float``
+    :rtype: ``Vector``
+
+
+.. function:: pivot_around_vec(vec, axis_vec_origin, axis_vec_target, degrees)
+
+    pivot around a given axis vector.
+
+    :param vec: ``Vector``
+    :param axis_vec_origin: ``Vector``
+    :param axis_vec_target: ``Vector``
+    :param degrees: ``int`` or ``float``
+    :rtype: ``Vector``
+
+
+.. function:: get_lookat_matrix(direction_vec, origin_vec, up_vec = (0, 0, 1))
+
+    Get a lookat matrix.
+
+    :param direction_vec: ``Vector``
+    :param origin_vec: ``Vector``
+    :param up_vec: ``Vector``
+    :rtype: ``Matrix``
+
+
+OpenGL 
+******
+
+Draw Primitive
+--------------
+
+.. function:: draw_line(start, end, cl = (0, 0, 0, 1) width = 1.0)
+    
+    Draw a line.
+
+    :param start: ``3`` length ``tuple`` of ``int`` or ``float``, or ``Vector``
+    :param end: ``3`` length ``tuple`` of ``int`` or ``float``, or ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_line_strip(verts, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a line strip.
+
+    :param verts: ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_line_loop(verts, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a line loop.
+
+    :param verts: ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_triangle(triangle, cl = (0, 0, 0, 1), width = 1.0)
+    
+    Draw a triangle.
+
+    :param triangle: ``3`` length ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``,  or ``3`` length ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_triangles(triangle, cl = (0, 0, 0, 1), width = 1.0)
+    
+    Draw a triangle.
+
+    :param triangle: ``list`` of ``3`` length ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``3`` length ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_triangle_strip(triangle_strip, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a triangle strip.
+
+    :param triangle_strip: ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_triangle_fan(start_vert, other_verts, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a triangle fan.
+
+    :param start_vert: ``3`` length ``list`` of ``int`` or ``float``, or ``Vector``.
+    :param other_verts: ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_quad(quad, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a quad.
+
+    :param quad: ``4`` length ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``4`` length ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_quads(quads, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw quads.
+
+    :param quads: ``list`` of ``4`` length ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``4`` length ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_quad_strip(vertical_edges, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a quad strip.
+
+    :param vertical_edges: ``list`` of ``2`` length ``list`` of ``3`` length ``list`` of ``int`` or ``float``, or ``list`` of ``2`` length ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_polygon(polygon, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a polygon.
+
+    :param polygon: ``list`` of ``3`` length ``tuple`` of ``int`` or ``float``, or ``list`` of ``Vector``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_circle_2d(origin, radius, points, cl = (0, 9, 0, 1))
+
+    Draw a 2D circle.
+
+    :param origin: ``2`` length ``list`` of ``int`` or ``float``
+    :param radius: ``int`` or ``float``
+    :param points: ``int``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_quad_2d(quad2d, cl = (0, 0, 0, 1), width = 1.0)
+    
+    Draw a 2D quad.
+
+    :param quad2d: ``4`` length ``list`` of ``2`` length ``tuple`` of ``int`` or ``float``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_rect_2d_1(top_left, bottom_right, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a rectangle.
+
+    :param top_left: ``2`` length ``tuple`` of ``int`` or ``float``
+    :param bottom_right: ``2`` length ``tuple`` of ``int`` or ``float``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+.. function:: draw_rect_2d_2(center, rect_width, rect_height, cl = (0, 0, 0, 1), width = 1.0)
+
+    Draw a rectangle.
+
+    :param center: ``2`` length ``tuple`` of ``int`` or ``float``
+    :param rect_width: ``int`` or ``float``
+    :param rect_height: ``int`` or ``float``
+    :param cl: ``4`` length ``tuple``. The range is (0, 0, 0, 0) to (255, 255, 255, 1)
+    :param width: ``int`` or ``float``
+
+
+Base Utility
+------------
+
+.. function:: rect_range_check_2d(args)
+
+    Check a cursor in a rectangle.
+
+    :param args: ``2`` length ``tuple`` (cursor location), ``2`` length ``tuple`` (top left), ``2`` length ``tuple`` (bottom right)
+    :param args: ``2`` length ``tuple`` (cursor location), ``2`` length ``tuple`` (center location), ``int`` (width), ``int`` (height)
+    :rtype: ``bool``
+
+
+Developers
+**********
+
+``kozmof``

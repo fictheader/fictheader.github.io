@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fuel &#8212; Fict Header Document Center  documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Beast Tools" href="../tools/beast.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Fict Header Document Center</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/beast.html">Beast Tools</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Fuel</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Fuel</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#how-to-install-fuel">How to Install Fuel</a></li>
+<li><a class="reference internal" href="#index">Index</a><ul>
+<li><a class="reference internal" href="#base">Base</a></li>
+<li><a class="reference internal" href="#math">Math</a></li>
+<li><a class="reference internal" href="#object">Object</a></li>
+<li><a class="reference internal" href="#mesh">Mesh</a></li>
+<li><a class="reference internal" href="#opengl-base">OpenGL Base</a></li>
+<li><a class="reference internal" href="#opengl-primitive">OpenGL Primitive</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id1">Base</a></li>
+<li><a class="reference internal" href="#id2">Object</a></li>
+<li><a class="reference internal" href="#id3">Mesh</a></li>
+<li><a class="reference internal" href="#id4">Math</a></li>
+<li><a class="reference internal" href="#opengl">OpenGL</a><ul>
+<li><a class="reference internal" href="#draw-primitive">Draw Primitive</a></li>
+<li><a class="reference internal" href="#base-utility">Base Utility</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developers">Developers</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../tools/beast.html" title="Previous Chapter: Beast Tools"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Beast Tools</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/codes/fuel.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Fuel</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#how-to-install-fuel">How to Install Fuel</a></li>
+<li><a class="reference internal" href="#index">Index</a><ul>
+<li><a class="reference internal" href="#base">Base</a></li>
+<li><a class="reference internal" href="#math">Math</a></li>
+<li><a class="reference internal" href="#object">Object</a></li>
+<li><a class="reference internal" href="#mesh">Mesh</a></li>
+<li><a class="reference internal" href="#opengl-base">OpenGL Base</a></li>
+<li><a class="reference internal" href="#opengl-primitive">OpenGL Primitive</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id1">Base</a></li>
+<li><a class="reference internal" href="#id2">Object</a></li>
+<li><a class="reference internal" href="#id3">Mesh</a></li>
+<li><a class="reference internal" href="#id4">Math</a></li>
+<li><a class="reference internal" href="#opengl">OpenGL</a><ul>
+<li><a class="reference internal" href="#draw-primitive">Draw Primitive</a></li>
+<li><a class="reference internal" href="#base-utility">Base Utility</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developers">Developers</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="../tools/beast.html" title="Previous Chapter: Beast Tools"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Beast Tools</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../_sources/codes/fuel.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="fuel">
+<h1>Fuel<a class="headerlink" href="#fuel" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">v0.1</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is an alpha version.</p>
+</div>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>Fuel is a Blender library for rapid developping.
+All methods are designed as idiomatic minimum components to understand a Blender API system quickly.  Any suggestons to make this library more pragmatic and useful are always welcomed.</p>
+</div>
+<div class="section" id="how-to-install-fuel">
+<h2>How to Install Fuel<a class="headerlink" href="#how-to-install-fuel" title="Permalink to this headline">¶</a></h2>
+<p>TODO</p>
+</div>
+<div class="section" id="index">
+<h2>Index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base">
+<h3>Base<a class="headerlink" href="#base" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#get_area" title="get_area"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_area()</span></code></a></p>
+<p><a class="reference internal" href="#get_area_context" title="get_area_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_area_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_areas" title="get_areas"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_areas()</span></code></a></p>
+<p><a class="reference internal" href="#get_areas_context" title="get_areas_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_areas_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_region_window_size_context" title="get_region_window_size_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_region_window_size_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_regions" title="get_regions"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_regions()</span></code></a></p>
+<p><a class="reference internal" href="#get_rv3d" title="get_rv3d"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_rv3d()</span></code></a></p>
+<p><a class="reference internal" href="#get_rv3d_context" title="get_rv3d_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_rv3d_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_screen" title="get_screen"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen()</span></code></a></p>
+<p><a class="reference internal" href="#get_screen_name_context" title="get_screen_name_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_screen_name_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_space" title="get_space"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_space()</span></code></a></p>
+<p><a class="reference internal" href="#get_space_context" title="get_space_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_space_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_view3d_regions" title="get_view3d_regions"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_view3d_regions()</span></code></a></p>
+<p><a class="reference internal" href="#get_view3d_regions_context" title="get_view3d_regions_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_view3d_regions_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_view3d_space" title="get_view3d_space"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_view3d_space()</span></code></a></p>
+<p><a class="reference internal" href="#get_view3d_space_context" title="get_view3d_space_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_view3d_space_context()</span></code></a></p>
+<p><a class="reference internal" href="#get_viewport_loc_context" title="get_viewport_loc_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_viewport_loc_context()</span></code></a></p>
+<p><a class="reference internal" href="#override_context" title="override_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">override_context()</span></code></a></p>
+<p><a class="reference internal" href="#print_to_console" title="print_to_console"><code class="xref py py-func docutils literal notranslate"><span class="pre">print_to_console()</span></code></a></p>
+</div>
+<div class="section" id="math">
+<h3>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#vec_distance" title="vec_distance"><code class="xref py py-func docutils literal notranslate"><span class="pre">vec_distance()</span></code></a></p>
+<p><a class="reference internal" href="#make_quat" title="make_quat"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_quat()</span></code></a></p>
+<p><a class="reference internal" href="#dot" title="dot"><code class="xref py py-func docutils literal notranslate"><span class="pre">dot()</span></code></a></p>
+<p><a class="reference internal" href="#cross" title="cross"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross()</span></code></a></p>
+<p><a class="reference internal" href="#sin" title="sin"><code class="xref py py-func docutils literal notranslate"><span class="pre">sin()</span></code></a></p>
+<p><a class="reference internal" href="#cos" title="cos"><code class="xref py py-func docutils literal notranslate"><span class="pre">cos()</span></code></a></p>
+<p><a class="reference internal" href="#tan" title="tan"><code class="xref py py-func docutils literal notranslate"><span class="pre">tan()</span></code></a></p>
+<p><a class="reference internal" href="#asin" title="asin"><code class="xref py py-func docutils literal notranslate"><span class="pre">asin()</span></code></a></p>
+<p><a class="reference internal" href="#acos" title="acos"><code class="xref py py-func docutils literal notranslate"><span class="pre">acos()</span></code></a></p>
+<p><a class="reference internal" href="#atan" title="atan"><code class="xref py py-func docutils literal notranslate"><span class="pre">atan()</span></code></a></p>
+<p><a class="reference internal" href="#pivotx" title="pivotx"><code class="xref py py-func docutils literal notranslate"><span class="pre">pivotx()</span></code></a></p>
+<p><a class="reference internal" href="#pivoty" title="pivoty"><code class="xref py py-func docutils literal notranslate"><span class="pre">pivoty()</span></code></a></p>
+<p><a class="reference internal" href="#pivotz" title="pivotz"><code class="xref py py-func docutils literal notranslate"><span class="pre">pivotz()</span></code></a></p>
+<p><a class="reference internal" href="#pivot_around_vec" title="pivot_around_vec"><code class="xref py py-func docutils literal notranslate"><span class="pre">pivot_around_vec()</span></code></a></p>
+<p><a class="reference internal" href="#get_lookat_matrix" title="get_lookat_matrix"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_lookat_matrix()</span></code></a></p>
+</div>
+<div class="section" id="object">
+<h3>Object<a class="headerlink" href="#object" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#get_active_object" title="get_active_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_active_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_visible_objects" title="get_visible_objects"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_visible_objects()</span></code></a></p>
+<p><a class="reference internal" href="#get_objects" title="get_objects"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_objects()</span></code></a></p>
+<p><a class="reference internal" href="#get_selected_objects" title="get_selected_objects"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selected_objects()</span></code></a></p>
+<p><a class="reference internal" href="#move_origin" title="move_origin"><code class="xref py py-func docutils literal notranslate"><span class="pre">move_origin()</span></code></a></p>
+<p><a class="reference internal" href="#pivot_ob_around_vec" title="pivot_ob_around_vec"><code class="xref py py-func docutils literal notranslate"><span class="pre">pivot_ob_around_vec()</span></code></a></p>
+<p><a class="reference internal" href="#at" title="at"><code class="xref py py-class docutils literal notranslate"><span class="pre">at</span></code></a></p>
+<p><a class="reference internal" href="#apply_all_modifiers" title="apply_all_modifiers"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_all_modifiers()</span></code></a></p>
+<p><a class="reference internal" href="#force_edit_mode" title="force_edit_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_edit_mode()</span></code></a></p>
+<p><a class="reference internal" href="#force_object_mode" title="force_object_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_object_mode()</span></code></a></p>
+<p><a class="reference internal" href="#force_sculpt_mode" title="force_sculpt_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_sculpt_mode()</span></code></a></p>
+<p><a class="reference internal" href="#force_vertex_paint_mode" title="force_vertex_paint_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_vertex_paint_mode()</span></code></a></p>
+<p><a class="reference internal" href="#force_weight_paint_mode" title="force_weight_paint_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_weight_paint_mode()</span></code></a></p>
+<p><a class="reference internal" href="#force_texture_paint_mode" title="force_texture_paint_mode"><code class="xref py py-func docutils literal notranslate"><span class="pre">force_texture_paint_mode()</span></code></a></p>
+<p><a class="reference internal" href="#toggle_object" title="toggle_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">toggle_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_modifier_items" title="get_modifier_items"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_modifier_items()</span></code></a></p>
+</div>
+<div class="section" id="mesh">
+<h3>Mesh<a class="headerlink" href="#mesh" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#setup_bvh" title="setup_bvh"><code class="xref py py-func docutils literal notranslate"><span class="pre">setup_bvh()</span></code></a></p>
+<p><a class="reference internal" href="#make_bmesh" title="make_bmesh"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_bmesh()</span></code></a></p>
+<p><a class="reference internal" href="#make_bmesh_from_objects" title="make_bmesh_from_objects"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_bmesh_from_objects()</span></code></a></p>
+<p><a class="reference internal" href="#apply_bmesh" title="apply_bmesh"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_bmesh()</span></code></a></p>
+<p><a class="reference internal" href="#make_edit_bmesh" title="make_edit_bmesh"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_edit_bmesh()</span></code></a></p>
+<p><a class="reference internal" href="#update_edit_bmesh" title="update_edit_bmesh"><code class="xref py py-func docutils literal notranslate"><span class="pre">update_edit_bmesh()</span></code></a></p>
+<p><a class="reference internal" href="#get_selected_verts" title="get_selected_verts"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_selected_verts()</span></code></a></p>
+<p><a class="reference internal" href="#get_verts_from_object" title="get_verts_from_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_verts_from_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_edges_from_object" title="get_edges_from_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_edges_from_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_faces_from_object" title="get_faces_from_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_faces_from_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_all_edges_lco_from_object" title="get_all_edges_lco_from_object"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_all_edges_lco_from_object()</span></code></a></p>
+<p><a class="reference internal" href="#get_edge_keys_from_face" title="get_edge_keys_from_face"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_edge_keys_from_face()</span></code></a></p>
+<p><a class="reference internal" href="#get_edge_from_edge_key" title="get_edge_from_edge_key"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_edge_from_edge_key()</span></code></a></p>
+<p><a class="reference internal" href="#get_verts_from_edge_key" title="get_verts_from_edge_key"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_verts_from_edge_key()</span></code></a></p>
+<p><a class="reference internal" href="#get_verts_from_face" title="get_verts_from_face"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_verts_from_face()</span></code></a></p>
+<p><a class="reference internal" href="#get_verts_from_edge" title="get_verts_from_edge"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_verts_from_edge()</span></code></a></p>
+<p><a class="reference internal" href="#get_normal_from_face" title="get_normal_from_face"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_normal_from_face()</span></code></a></p>
+<p><a class="reference internal" href="#get_bound_edge_keys_from_faces" title="get_bound_edge_keys_from_faces"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bound_edge_keys_from_faces()</span></code></a></p>
+<p><a class="reference internal" href="#get_bedges_from_bvert" title="get_bedges_from_bvert"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bedges_from_bvert()</span></code></a></p>
+<p><a class="reference internal" href="#get_bfaces_from_bvert" title="get_bfaces_from_bvert"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bfaces_from_bvert()</span></code></a></p>
+<p><a class="reference internal" href="#get_bfaces_from_bedge" title="get_bfaces_from_bedge"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_bfaces_from_bedge()</span></code></a></p>
+<p><a class="reference internal" href="#edge_intersect" title="edge_intersect"><code class="xref py py-func docutils literal notranslate"><span class="pre">edge_intersect()</span></code></a></p>
+<p><a class="reference internal" href="#get_center_wco" title="get_center_wco"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_center_wco()</span></code></a></p>
+</div>
+<div class="section" id="opengl-base">
+<h3>OpenGL Base<a class="headerlink" href="#opengl-base" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#rect_range_check_2d" title="rect_range_check_2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">rect_range_check_2d()</span></code></a></p>
+</div>
+<div class="section" id="opengl-primitive">
+<h3>OpenGL Primitive<a class="headerlink" href="#opengl-primitive" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#draw_line" title="draw_line"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_line()</span></code></a></p>
+<p><a class="reference internal" href="#draw_line_strip" title="draw_line_strip"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_line_strip()</span></code></a></p>
+<p><a class="reference internal" href="#draw_line_loop" title="draw_line_loop"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_line_loop()</span></code></a></p>
+<p><a class="reference internal" href="#draw_triangle" title="draw_triangle"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_triangle()</span></code></a></p>
+<p><a class="reference internal" href="#draw_triangles" title="draw_triangles"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_triangles()</span></code></a></p>
+<p><a class="reference internal" href="#draw_triangle_strip" title="draw_triangle_strip"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_triangle_strip()</span></code></a></p>
+<p><a class="reference internal" href="#draw_triangle_fan" title="draw_triangle_fan"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_triangle_fan()</span></code></a></p>
+<p><a class="reference internal" href="#draw_quad" title="draw_quad"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_quad()</span></code></a></p>
+<p><a class="reference internal" href="#draw_quads" title="draw_quads"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_quads()</span></code></a></p>
+<p><a class="reference internal" href="#draw_quad_strip" title="draw_quad_strip"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_quad_strip()</span></code></a></p>
+<p><a class="reference internal" href="#draw_polygon" title="draw_polygon"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_polygon()</span></code></a></p>
+<p><a class="reference internal" href="#draw_circle_2d" title="draw_circle_2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_circle_2d()</span></code></a></p>
+<p><a class="reference internal" href="#draw_quad_2d" title="draw_quad_2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_quad_2d()</span></code></a></p>
+<p><a class="reference internal" href="#draw_rect_2d_1" title="draw_rect_2d_1"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_rect_2d_1()</span></code></a></p>
+<p><a class="reference internal" href="#draw_rect_2d_2" title="draw_rect_2d_2"><code class="xref py py-func docutils literal notranslate"><span class="pre">draw_rect_2d_2()</span></code></a></p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Base<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="override_context">
+<code class="descname">override_context</code><span class="sig-paren">(</span><em>area_name</em><span class="sig-paren">)</span><a class="headerlink" href="#override_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a specific context and return it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_types.Context</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="print_to_console">
+<code class="descname">print_to_console</code><span class="sig-paren">(</span><em>txt</em><span class="sig-paren">)</span><a class="headerlink" href="#print_to_console" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a text to the console window.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>txt</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_region_window_size_context">
+<code class="descname">get_region_window_size_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_region_window_size_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get width and height of window in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_viewport_loc_context">
+<code class="descname">get_viewport_loc_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_viewport_loc_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a location of viewport camera in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Vector</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_viewports_loc">
+<code class="descname">get_viewports_loc</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_viewports_loc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get locations of all viewport cameras in a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">List</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_area_context">
+<code class="descname">get_area_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_area_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an area in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy.types.Area</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_areas_context">
+<code class="descname">get_areas_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_areas_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all areas of screen in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.Area</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_screen_name_context">
+<code class="descname">get_screen_name_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_screen_name_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a screen name in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_screen">
+<code class="descname">get_screen</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy.types.Screen</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_areas">
+<code class="descname">get_areas</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_areas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all areas in a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.Area</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_area">
+<code class="descname">get_area</code><span class="sig-paren">(</span><em>screen_name</em>, <em>area_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an area in a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</li>
+<li><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">bpy.types.Area</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_view3d_space_context">
+<code class="descname">get_view3d_space_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_view3d_space_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get space of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.SpaceView3D</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_space">
+<code class="descname">get_space</code><span class="sig-paren">(</span><em>area_name</em>, <em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a specific area’s space in a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</li>
+<li><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_space_context">
+<code class="descname">get_space_context</code><span class="sig-paren">(</span><em>area_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_space_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a specific area’s space in the current screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_view3d_space">
+<code class="descname">get_view3d_space</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_view3d_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get space of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in a screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Note:</th><td class="field-body">if spaces have <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> contains <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code> at last.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.SpaceView3D</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_regions">
+<code class="descname">get_regions</code><span class="sig-paren">(</span><em>area_name</em>, <em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_regions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get regions in a specific area and screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</li>
+<li><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_regions_context">
+<code class="descname">get_regions_context</code><span class="sig-paren">(</span><em>area_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_regions_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get regions in a specific area of the current screen.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>area_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code>, <code class="docutils literal notranslate"><span class="pre">TIMELINE</span></code>, <code class="docutils literal notranslate"><span class="pre">GRAPH_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">DOPESHEET_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NLA_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">IMAGE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">SEQUENCE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">CLIP_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">TEXT_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">NODE_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">LOGIC_EDITOR</span></code>, <code class="docutils literal notranslate"><span class="pre">PROPERTIES</span></code>, <code class="docutils literal notranslate"><span class="pre">OUTLINER</span></code>, <code class="docutils literal notranslate"><span class="pre">USER_PREFERENCES</span></code>, <code class="docutils literal notranslate"><span class="pre">INFO</span></code>, <code class="docutils literal notranslate"><span class="pre">FILE_BROWSER</span></code>, <code class="docutils literal notranslate"><span class="pre">CONSOLE</span></code>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_view3d_regions_context">
+<code class="descname">get_view3d_regions_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_view3d_regions_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get regions of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in the context. Types of regions are <code class="docutils literal notranslate"><span class="pre">HEADER</span></code>, <code class="docutils literal notranslate"><span class="pre">TOOLS</span></code>, <code class="docutils literal notranslate"><span class="pre">TOOL_PROPS</span></code>, <code class="docutils literal notranslate"><span class="pre">UI</span></code>, <code class="docutils literal notranslate"><span class="pre">WINDOW</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.Region</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_view3d_regions">
+<code class="descname">get_view3d_regions</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_view3d_regions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get regions of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in a screen. Types of regions are <code class="docutils literal notranslate"><span class="pre">HEADER</span></code>, <code class="docutils literal notranslate"><span class="pre">TOOLS</span></code>, <code class="docutils literal notranslate"><span class="pre">TOOL_PROPS</span></code>, <code class="docutils literal notranslate"><span class="pre">UI</span></code>, <code class="docutils literal notranslate"><span class="pre">WINDOW</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.Region</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_rv3d_context">
+<code class="descname">get_rv3d_context</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_rv3d_context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get region_3d(rv3d) of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">RegionView3D</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_rv3d">
+<code class="descname">get_rv3d</code><span class="sig-paren">(</span><em>screen_name</em><span class="sig-paren">)</span><a class="headerlink" href="#get_rv3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get region_3d(rv3d) of <code class="docutils literal notranslate"><span class="pre">VIEW_3D</span></code> in the context.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>screen_name</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code> (ex. 3D View Full, Animation, Compositing, Default, Game Logic, Motion Tracking, Scripting, UV Editing, Video Editing)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">RegionView3D</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_addon_prefs">
+<code class="descname">get_addon_prefs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_addon_prefs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an object of Addon Preferences.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">An object which contains values in <code class="docutils literal notranslate"><span class="pre">AddonPreferences</span></code> if it has values.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_keymap_item">
+<code class="descname">get_keymap_item</code><span class="sig-paren">(</span><em>km</em>, <em>kmi_idname</em><span class="sig-paren">)</span><a class="headerlink" href="#get_keymap_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a keymap item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>km</strong> – <code class="docutils literal notranslate"><span class="pre">bpy.types.KeyMap</span></code></li>
+<li><strong>kmi_idname</strong> – <code class="docutils literal notranslate"><span class="pre">str</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">bpy.types.KeyMapItem</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h2>Object<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="get_active_object">
+<code class="descname">get_active_object</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_active_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an active object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_visible_objects">
+<code class="descname">get_visible_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_visible_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get visible objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_objects">
+<code class="descname">get_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_selected_objects">
+<code class="descname">get_selected_objects</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#get_selected_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get selected objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="move_origin">
+<code class="descname">move_origin</code><span class="sig-paren">(</span><em>ob</em>, <em>new_origin</em><span class="sig-paren">)</span><a class="headerlink" href="#move_origin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move a location of origin.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>new_origin</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pivot_ob_around_vec">
+<code class="descname">pivot_ob_around_vec</code><span class="sig-paren">(</span><em>ob</em>, <em>v_origin</em>, <em>v_target</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#pivot_ob_around_vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move an object around a vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>v_origin</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>v_target</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="at">
+<em class="property">class </em><code class="descname">at</code><a class="headerlink" href="#at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pivot object at a specific center.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Method:</th><td class="field-body"><p class="first">__init__(self, ob, center_pos)</p>
+<p>Initialization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">self:</th><td class="field-body">self</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ob:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">center_pos:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Method:</th><td class="field-body"><p class="first">rotate(self, euler)</p>
+<p>Rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">self:</th><td class="field-body">self</td>
+</tr>
+<tr class="field-even field"><th class="field-name">euler:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Euler</span></code></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Method:</th><td class="field-body"><p class="first">move(self. dst_pos)</p>
+<p>Move to dst_pos from center_pos.</p>
+<table class="last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">self:</th><td class="field-body">self</td>
+</tr>
+<tr class="field-even field"><th class="field-name">dst_pos:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="apply_all_modifiers">
+<code class="descname">apply_all_modifiers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apply_all_modifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply all modifiers to selected objects.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_edit_mode">
+<code class="descname">force_edit_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_edit_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Edit Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_object_mode">
+<code class="descname">force_object_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_object_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Object Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_sculpt_mode">
+<code class="descname">force_sculpt_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_sculpt_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Sculpt Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_vertex_paint_mode">
+<code class="descname">force_vertex_paint_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_vertex_paint_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Vertex Paint Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_weight_paint_mode">
+<code class="descname">force_weight_paint_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_weight_paint_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Weight Paint Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="force_texture_paint_mode">
+<code class="descname">force_texture_paint_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#force_texture_paint_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change to Texture Paint Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="toggle_object">
+<code class="descname">toggle_object</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#toggle_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggle a current mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_modifier_items">
+<code class="descname">get_modifier_items</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_modifier_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all modifier items of an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>Mesh<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="setup_bvh">
+<code class="descname">setup_bvh</code><span class="sig-paren">(</span><em>bmesh</em><span class="sig-paren">)</span><a class="headerlink" href="#setup_bvh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up a bvh tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bmesh</strong> – <code class="docutils literal notranslate"><span class="pre">BMesh</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BVHTree</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="make_bmesh">
+<code class="descname">make_bmesh</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#make_bmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make bmesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMesh</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="make_bmesh_from_objects">
+<code class="descname">make_bmesh_from_objects</code><span class="sig-paren">(</span><em>obs_list</em><span class="sig-paren">)</span><a class="headerlink" href="#make_bmesh_from_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make bmeshs from objects with matrixes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obs_list</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMesh</span></code>, (<code class="docutils literal notranslate"><span class="pre">Matrix</span></code>, (<code class="docutils literal notranslate"><span class="pre">int(num</span> <span class="pre">of</span> <span class="pre">verts)</span></code>, <code class="docutils literal notranslate"><span class="pre">int(num</span> <span class="pre">of</span> <span class="pre">edges)</span></code> <code class="docutils literal notranslate"><span class="pre">int(num</span> <span class="pre">of</span> <span class="pre">faces)</span></code>, <code class="docutils literal notranslate"><span class="pre">int(num</span> <span class="pre">of</span> <span class="pre">loops)</span></code>))</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="apply_bmesh">
+<code class="descname">apply_bmesh</code><span class="sig-paren">(</span><em>bm</em>, <em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#apply_bmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply a bmesh to an object. Then delete the bmesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>bm</strong> – <code class="docutils literal notranslate"><span class="pre">BMesh</span></code></li>
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="make_edit_bmesh">
+<code class="descname">make_edit_bmesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#make_edit_bmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a bmesh from an object in Edit Mode.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMesh</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="update_edit_bmesh">
+<code class="descname">update_edit_bmesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#update_edit_bmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply a bmesh to an object in Edit Mode.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_selected_verts">
+<code class="descname">get_selected_verts</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_selected_verts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get selected vertices.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Note:</th><td class="field-body">If you need to get selected vertices in Edit Mode which means realtime selection, use bmesh.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">bpy_prop_collection</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy.types.MeshVertex</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_verts_from_object">
+<code class="descname">get_verts_from_object</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_verts_from_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all vertices from an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshVertex</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_edges_from_object">
+<code class="descname">get_edges_from_object</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_edges_from_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all edges from an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshEdge</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_faces_from_object">
+<code class="descname">get_faces_from_object</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_faces_from_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all faces from an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshPolygon</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_all_edges_lco_from_object">
+<code class="descname">get_all_edges_lco_from_object</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_all_edges_lco_from_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all edges local coordinates from object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_edge_keys_from_face">
+<code class="descname">get_edge_keys_from_face</code><span class="sig-paren">(</span><em>face</em><span class="sig-paren">)</span><a class="headerlink" href="#get_edge_keys_from_face" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all edge keys from a face.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>face</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshPolygon</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_edge_from_edge_key">
+<code class="descname">get_edge_from_edge_key</code><span class="sig-paren">(</span><em>ob</em>, <em>edge_key</em><span class="sig-paren">)</span><a class="headerlink" href="#get_edge_from_edge_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an edge from an edge key.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>edge_key</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">bpy_types.MeshEdge</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_verts_from_edge_key">
+<code class="descname">get_verts_from_edge_key</code><span class="sig-paren">(</span><em>ob</em>, <em>edge_key</em><span class="sig-paren">)</span><a class="headerlink" href="#get_verts_from_edge_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get vertices from an edge key.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>edge_key</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshVertex</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_verts_from_face">
+<code class="descname">get_verts_from_face</code><span class="sig-paren">(</span><em>ob</em>, <em>face</em><span class="sig-paren">)</span><a class="headerlink" href="#get_verts_from_face" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all vertices from a face.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>face</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshPolygon</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshVertex</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_verts_from_edge">
+<code class="descname">get_verts_from_edge</code><span class="sig-paren">(</span><em>ob</em>, <em>edge</em><span class="sig-paren">)</span><a class="headerlink" href="#get_verts_from_edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all vertices from an edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>edge</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshEdge</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshVertex</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_normal_from_face">
+<code class="descname">get_normal_from_face</code><span class="sig-paren">(</span><em>face</em><span class="sig-paren">)</span><a class="headerlink" href="#get_normal_from_face" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a normal from a face.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>face</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshPolygon</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_bound_edge_keys_from_faces">
+<code class="descname">get_bound_edge_keys_from_faces</code><span class="sig-paren">(</span><em>faces</em><span class="sig-paren">)</span><a class="headerlink" href="#get_bound_edge_keys_from_faces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get bound edges.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>faces</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshPolygon</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshEdge</span></code> or <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_bedges_from_bvert">
+<code class="descname">get_bedges_from_bvert</code><span class="sig-paren">(</span><em>bvert</em><span class="sig-paren">)</span><a class="headerlink" href="#get_bedges_from_bvert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get edges link to a vertex in a bmesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bvert</strong> – <code class="docutils literal notranslate"><span class="pre">BMVert</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMElemSeq</span></code> of <code class="docutils literal notranslate"><span class="pre">BMEdge</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_bfaces_from_bvert">
+<code class="descname">get_bfaces_from_bvert</code><span class="sig-paren">(</span><em>bvert</em><span class="sig-paren">)</span><a class="headerlink" href="#get_bfaces_from_bvert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get faces link to a vertex in a bmesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bvert</strong> – <code class="docutils literal notranslate"><span class="pre">BMVert</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMElemSeq</span></code> of <code class="docutils literal notranslate"><span class="pre">BMFace</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_bfaces_from_bedge">
+<code class="descname">get_bfaces_from_bedge</code><span class="sig-paren">(</span><em>bedge</em><span class="sig-paren">)</span><a class="headerlink" href="#get_bfaces_from_bedge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get faces link to an edge in a bmesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bedge</strong> – <code class="docutils literal notranslate"><span class="pre">BMEdge</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">BMElemSeq</span></code> of <code class="docutils literal notranslate"><span class="pre">BMFace</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="edge_intersect">
+<code class="descname">edge_intersect</code><span class="sig-paren">(</span><em>ob</em>, <em>edge_ob</em>, <em>edge</em><span class="sig-paren">)</span><a class="headerlink" href="#edge_intersect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check an edge intersects a face of an object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>edge_ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></li>
+<li><strong>edge</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.MeshEdge</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector``(location),</span> <span class="pre">``Vector``(normal),</span> <span class="pre">``int``(face_index)</span> <span class="pre">or`</span> <span class="pre">``NoneType</span></code>, <code class="docutils literal notranslate"><span class="pre">NoneType</span></code>, <code class="docutils literal notranslate"><span class="pre">NoneType</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_center_wco">
+<code class="descname">get_center_wco</code><span class="sig-paren">(</span><em>ob</em><span class="sig-paren">)</span><a class="headerlink" href="#get_center_wco" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a center location of an object in the world space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ob</strong> – <code class="docutils literal notranslate"><span class="pre">bpy_types.Object</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="id4">
+<h2>Math<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to use radian based trigonometric function, use defalut <code class="docutils literal notranslate"><span class="pre">math</span></code> module.</p>
+</div>
+<dl class="function">
+<dt id="vec_distance">
+<code class="descname">vec_distance</code><span class="sig-paren">(</span><em>org</em>, <em>dst</em><span class="sig-paren">)</span><a class="headerlink" href="#vec_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a distance of two points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>org</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>dst</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="make_quat">
+<code class="descname">make_quat</code><span class="sig-paren">(</span><em>axis_vec</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#make_quat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a quaternion to rotate around an axis vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>axis_vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Quaternion</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="dot">
+<code class="descname">dot</code><span class="sig-paren">(</span><em>vec1</em>, <em>vec2</em><span class="sig-paren">)</span><a class="headerlink" href="#dot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dot function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec1</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>vec2</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cross">
+<code class="descname">cross</code><span class="sig-paren">(</span><em>vec1</em>, <em>vec2</em><span class="sig-paren">)</span><a class="headerlink" href="#cross" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cross function. The order is vec1 X vec2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec1</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>vec2</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sin">
+<code class="descname">sin</code><span class="sig-paren">(</span><em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#sin" title="Permalink to this definition">¶</a></dt>
+<dd><p>sine function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cos">
+<code class="descname">cos</code><span class="sig-paren">(</span><em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#cos" title="Permalink to this definition">¶</a></dt>
+<dd><p>cosine function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="tan">
+<code class="descname">tan</code><span class="sig-paren">(</span><em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#tan" title="Permalink to this definition">¶</a></dt>
+<dd><p>tangent function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="asin">
+<code class="descname">asin</code><span class="sig-paren">(</span><em>ratio</em><span class="sig-paren">)</span><a class="headerlink" href="#asin" title="Permalink to this definition">¶</a></dt>
+<dd><p>arc sine function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ratio</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="acos">
+<code class="descname">acos</code><span class="sig-paren">(</span><em>ratio</em><span class="sig-paren">)</span><a class="headerlink" href="#acos" title="Permalink to this definition">¶</a></dt>
+<dd><p>arc cosine function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ratio</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="atan">
+<code class="descname">atan</code><span class="sig-paren">(</span><em>ratio</em><span class="sig-paren">)</span><a class="headerlink" href="#atan" title="Permalink to this definition">¶</a></dt>
+<dd><p>arc tangent function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ratio</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">float</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pivotx">
+<code class="descname">pivotx</code><span class="sig-paren">(</span><em>vec</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#pivotx" title="Permalink to this definition">¶</a></dt>
+<dd><p>pivot a vector around x axis.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pivoty">
+<code class="descname">pivoty</code><span class="sig-paren">(</span><em>vec</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#pivoty" title="Permalink to this definition">¶</a></dt>
+<dd><p>pivot a vector around y axis.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pivotz">
+<code class="descname">pivotz</code><span class="sig-paren">(</span><em>vec</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#pivotz" title="Permalink to this definition">¶</a></dt>
+<dd><p>pivot a vector around z axis.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pivot_around_vec">
+<code class="descname">pivot_around_vec</code><span class="sig-paren">(</span><em>vec</em>, <em>axis_vec_origin</em>, <em>axis_vec_target</em>, <em>degrees</em><span class="sig-paren">)</span><a class="headerlink" href="#pivot_around_vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>pivot around a given axis vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>axis_vec_origin</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>axis_vec_target</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>degrees</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Vector</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="get_lookat_matrix">
+<code class="descname">get_lookat_matrix</code><span class="sig-paren">(</span><em>direction_vec</em>, <em>origin_vec</em>, <em>up_vec = (0</em>, <em>0</em>, <em>1)</em><span class="sig-paren">)</span><a class="headerlink" href="#get_lookat_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a lookat matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>direction_vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>origin_vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>up_vec</strong> – <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Matrix</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="opengl">
+<h2>OpenGL<a class="headerlink" href="#opengl" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="draw-primitive">
+<h3>Draw Primitive<a class="headerlink" href="#draw-primitive" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="draw_line">
+<code class="descname">draw_line</code><span class="sig-paren">(</span><em>start</em>, <em>end</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1) width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a line.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>start</strong> – <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>end</strong> – <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_line_strip">
+<code class="descname">draw_line_strip</code><span class="sig-paren">(</span><em>verts</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_line_strip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a line strip.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>verts</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_line_loop">
+<code class="descname">draw_line_loop</code><span class="sig-paren">(</span><em>verts</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_line_loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a line loop.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>verts</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_triangle">
+<code class="descname">draw_triangle</code><span class="sig-paren">(</span><em>triangle</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a triangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>triangle</strong> – <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>,  or <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_triangles">
+<code class="descname">draw_triangles</code><span class="sig-paren">(</span><em>triangle</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_triangles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a triangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>triangle</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_triangle_strip">
+<code class="descname">draw_triangle_strip</code><span class="sig-paren">(</span><em>triangle_strip</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_triangle_strip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a triangle strip.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>triangle_strip</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_triangle_fan">
+<code class="descname">draw_triangle_fan</code><span class="sig-paren">(</span><em>start_vert</em>, <em>other_verts</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_triangle_fan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a triangle fan.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>start_vert</strong> – <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">Vector</span></code>.</li>
+<li><strong>other_verts</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_quad">
+<code class="descname">draw_quad</code><span class="sig-paren">(</span><em>quad</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_quad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a quad.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>quad</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_quads">
+<code class="descname">draw_quads</code><span class="sig-paren">(</span><em>quads</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_quads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw quads.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>quads</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_quad_strip">
+<code class="descname">draw_quad_strip</code><span class="sig-paren">(</span><em>vertical_edges</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_quad_strip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a quad strip.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vertical_edges</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_polygon">
+<code class="descname">draw_polygon</code><span class="sig-paren">(</span><em>polygon</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a polygon.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>polygon</strong> – <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">3</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">Vector</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_circle_2d">
+<code class="descname">draw_circle_2d</code><span class="sig-paren">(</span><em>origin</em>, <em>radius</em>, <em>points</em>, <em>cl = (0</em>, <em>9</em>, <em>0</em>, <em>1)</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_circle_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a 2D circle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>origin</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>radius</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>points</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_quad_2d">
+<code class="descname">draw_quad_2d</code><span class="sig-paren">(</span><em>quad2d</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_quad_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a 2D quad.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>quad2d</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">list</span></code> of <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_rect_2d_1">
+<code class="descname">draw_rect_2d_1</code><span class="sig-paren">(</span><em>top_left</em>, <em>bottom_right</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_rect_2d_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a rectangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>top_left</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>bottom_right</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="draw_rect_2d_2">
+<code class="descname">draw_rect_2d_2</code><span class="sig-paren">(</span><em>center</em>, <em>rect_width</em>, <em>rect_height</em>, <em>cl = (0</em>, <em>0</em>, <em>0</em>, <em>1)</em>, <em>width = 1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#draw_rect_2d_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a rectangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>center</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>rect_width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>rect_height</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+<li><strong>cl</strong> – <code class="docutils literal notranslate"><span class="pre">4</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. The range is (0, 0, 0, 0) to (255, 255, 255, 1)</li>
+<li><strong>width</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="base-utility">
+<h3>Base Utility<a class="headerlink" href="#base-utility" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="rect_range_check_2d">
+<code class="descname">rect_range_check_2d</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#rect_range_check_2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check a cursor in a rectangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>args</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> (cursor location), <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> (top left), <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> (bottom right)</li>
+<li><strong>args</strong> – <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> (cursor location), <code class="docutils literal notranslate"><span class="pre">2</span></code> length <code class="docutils literal notranslate"><span class="pre">tuple</span></code> (center location), <code class="docutils literal notranslate"><span class="pre">int</span></code> (width), <code class="docutils literal notranslate"><span class="pre">int</span></code> (height)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">kozmof</span></code></p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, Fict Header.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
