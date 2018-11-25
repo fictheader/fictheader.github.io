@@ -14,6 +14,54 @@
       margin-bottom: 70px;
     }
 
+    #character {
+        position: relative; 
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        z-index: 2;
+    }
+
+    #shadow {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        z-index: 1;
+    }
+
+    img[src="./images/ddd.png"] {
+        animation-timing-function: ease-in-out;
+        -webkit-animation: updown 0.4s infinite alternate;
+        animation: updown 0.4s infinite alternate;
+    }
+
+    img[src="./images/shadow.png"] {
+        animation-timing-function: ease-in-out;
+        -webkit-animation: scale 0.4s infinite alternate;
+        animation: scale 0.4s infinite alternate;
+    }
+
+    @-webkit-keyframes updown {
+        0% {transform: translateY(0px);}
+        100% {transform: translateY(-28px);}
+    }
+
+    @keyframes updown {
+        0% {transform: translateY(0px);}
+        100% {transform: translateY(-28px);}
+    }
+
+    @-webkit-keyframes scale {
+        0% {transform: scale(1.0);}
+        100% {transform: scale(0.99);}
+    }
+
+    @keyframes scale {
+        0% {transform: scale(1.0);}
+        100% {transform: scale(0.99);}
+    }
+
     footer {
       position: fixed;
       bottom: 0;
@@ -39,7 +87,8 @@
     <button onclick="window.location='https://fictheader.github.io/about';" class="button">ABOUT US</button>
   </div>
 
-    <img src="./images/ddd.png" alt="character" height=100%>
+    <img src="./images/ddd.png" id="character" alt="character" height=100%>
+    <img src="./images/shadow.png" id="shadow" alt="shadow" height=100%>
 
 </body>
 
